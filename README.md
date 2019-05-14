@@ -67,4 +67,16 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+Reading csv files through pandas:
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
+
+Working with Datetime & filtering:
+https://stackoverflow.com/questions/29366572/pandas-how-to-filter-most-frequent-datetime-objects
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.html
+https://stackoverflow.com/questions/29370057/select-dataframe-rows-between-two-dates
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.html
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.dayofweek.html
+
+Concatenating two columns:
+https://stackoverflow.com/questions/19377969/combine-two-columns-of-text-in-dataframe-in-pandas-python
