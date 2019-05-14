@@ -218,7 +218,7 @@ def main():
             raw_data = pd.read_csv(CITY_DATA[city.lower()])
             display_data(raw_data, user_choice)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Enter "Yes" or "No"\n')
         if restart.lower() != 'yes':
             break
 
