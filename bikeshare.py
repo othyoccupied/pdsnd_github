@@ -19,7 +19,7 @@ def get_filters():
 
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-        city = input("\n Please type in the city you would like to filter the data by.\n 1. Chicago \n 2. New York City \n 3. Washington \n\n").title()
+        city = input("\n Please type in the city you would like to analyze.\n 1. Chicago \n 2. New York City \n 3. Washington \n\n").title()
         if city not in ('New York City', 'Washington', 'Chicago'):
             print("Sorry, invalid city. Try again.")
             continue
@@ -28,7 +28,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
-        month = input("\n Please type in the month to filter the data by, or type 'All' for no filter.\n 1. January \n 2. February \n 3. March \n 4. April \n 5. May \n 6. June \n 7. All \n\n").title()
+        month = input("\n Please type in the month to filter the City's data by, or type 'All' for no filter.\n 1. January \n 2. February \n 3. March \n 4. April \n 5. May \n 6. June \n 7. All \n\n").title()
         if month not in ('January', 'February', 'March', 'April', 'May', 'June', 'All'):
             print("Sorry, invalid month. Try again.")
             continue
@@ -218,7 +218,9 @@ def main():
             raw_data = pd.read_csv(CITY_DATA[city.lower()])
             display_data(raw_data, user_choice)
 
+
         restart = input('\nWould you like to restart? Enter "Yes" or "No"\n')
+
         if restart.lower() != 'yes':
             break
 
